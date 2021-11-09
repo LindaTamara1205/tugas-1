@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Registration Form 2020</title>
+</head>
+<body>
+    <Form method="POST" action="daftar.php">
+        <fieldset>
+            <legend>Akun</legend>
+            
+            <table>
+                <tr>
+                    <td><label for="user">username</label></td>
+                    <td><input type="text" name="username" id="user"></td> 
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="password" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="cpass">Konfirmasi Password</label></td>
+                    <td><input type="password" name="cpassword" id="cpass"></td>
+                </tr>
+            </table>
+            
+            <p>
+                <input type="date" name="tanggal">
+            </p>
+            <p>
+                <input type="radio" name="gender">Laki-laki
+                <input type="radio" name="gender">Perempuan
+            </p>
+            <p>
+                <input type="checkbox" name="hobi" id="hobi">
+                <label for="hobi">Nonton</label>
+                <input type="checkbox" name="hobi">Membaca
+                <input type="checkbox" name="hobi">Travelling
+            </p>
+            <p>
+                <select name="jurusan" id="">
+                    <option value="">&lt;&lt;&lt;Pilih Salah Satu&gt;&gt;&gt;</option>
+                    <option value="S1TI">S1 Teknologi Informasi</option>
+                    <option value="S1Ilkom">S1 Ilmu Komputer</option>
+                </select>
+            </p>
+            <p>
+                <textarea name="komplain" id="" cols="25" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Daftar">
+                <button type="reset">Reset</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+

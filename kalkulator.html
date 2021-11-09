@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Bilangan Bulat</title>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .btn {
+          width: 6em;
+          height: 6em;
+          margin: 0.2em;
+          border: none;
+          cursor: pointer;
+        }
+        #viewer {
+          width: 25.7em;
+          height: 4em;
+          margin: 0.3em;
+          padding: 0.1em 0.8em;
+        }
+        #main {
+          background: linear-gradient(to right, rgb(90, 20, 20), rgb(10, 8, 110));
+          height: 100%;
+        }
+        form {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      </style>
+    </head>
+
+    <script>
+        function kurang() {
+            a = document.register.a.value;
+            b = document.register.b.value;
+
+            kurang = a - b;
+
+            alert(a+" - "+b+" = "+kurang)
+        }
+        function tambah() {
+            a = document.register.a.value;
+            b = document.register.b.value;
+
+            tambah = Number(a) + Number(b);
+
+            alert(a+" + "+b+" = "+tambah)
+        }
+        function kali() {
+            a = document.register.a.value;
+            b = document.register.b.value;
+
+            kali = a * b;
+
+            alert(a+" * "+b+" = "+kali)
+        }
+        function bagi() {
+            a = document.register.a.value;
+            b = document.register.b.value;
+
+            bagi = a / b;
+
+            alert(a+" / "+b+" = "+bagi)
+        }
+
+    </script>
+</head>
+<body>
+    <form name="register">
+        <input type="text" name="a" placeholder=" "><br/>
+        <input type="text" name="b" placeholder=" "><br/>
+        <input type="button" onclick="tambah()" value="+">
+        <input type="button" onclick="kurang()" value="-">
+        <input type="button" onclick="kali()" value="*">
+        <input type="button" onclick="bagi()" value="/">
+
+    </form>
+</body>
+</html>
